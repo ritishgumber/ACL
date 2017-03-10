@@ -63,18 +63,6 @@ class YourComponent extends React.Component {
 
 ```
 
-<img align="right" height="150" src="https://cloud.githubusercontent.com/assets/5427704/7724257/b7f45d6c-ff0d-11e4-8f60-06024eaa1508.png">
-
-#### Getting Started and Tutorials
-
-Visit [Getting Started](https://tutorials.cloudboost.io) for tutorial and quickstart guide.
-
-
-#### API Reference
-
-Visit [CloudBoost Docs](http://docs.cloudboost.io) for API Reference.
-
-
 #LICENSE
 
 Copyright 2016 HackerBay, Inc.
@@ -90,4 +78,15 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+<img align="right" height="150" src="https://cloud.githubusercontent.com/assets/5427704/7724257/b7f45d6c-ff0d-11e4-8f60-06024eaa1508.png">
+
+#### Getting Started and Tutorials
+
+Visit [Getting Started](https://tutorials.cloudboost.io) for tutorial and quickstart guide.
+
+
+#### API Reference
+
+Visit [CloudBoost Docs](http://docs.cloudboost.io) for API Reference.
 
