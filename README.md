@@ -50,7 +50,7 @@ class YourComponent extends React.Component {
               closeACLModal= { this.closeACLModal } // Required // used to close ACL modal
               isOpenACLModal= { this.state.showACLModal }  // Required // true -> Modal is open , false -> Modal is closed
               objectWithACL= { } // Required //  Here you need to pass the object whose ACL prop you want to modify
-              onACLSave= { this.props.saveACL } // Required // this will be called when you click save inside of ACL modal.
+              onACLSave= { this.saveACL } // Required // this will be called when you click save inside of ACL modal.
               dialogClassName = { } // Optional // Custom class for Modal root/container element
           />
         );
