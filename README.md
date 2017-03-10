@@ -23,7 +23,7 @@ var ACL = require('cloudboost-acl');
 ``` js
 
 import React from 'react';
-import ACL from './acl'
+import ACL from 'cloudboost-acl'
 
 class YourComponent extends React.Component {
 
