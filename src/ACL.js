@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import { Modal, Button } from 'react-bootstrap';
 import ACLRows from './aclRows.js'
 
+// mui dependencies
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 class ACL extends React.Component {
 	constructor() {
 		super()
@@ -114,18 +117,21 @@ class ACL extends React.Component {
 		this.props.closeACLModal()
 	}
 	render() {
+
 		return (
 			<Modal show={this.props.isOpenACLModal} onHide={this.close} dialogClassName={this.props.dialogClassName ? this.props.dialogClassName : "custom-modal"}>
 				<Modal.Header closeButton>
 					<Modal.Title>Edit ACL</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<ACLRows
-						aclList={this.state.aclList}
-						removeAcl={this.removeAcl.bind(this)}
-						addAcl={this.addAcl.bind(this)}
-						updateAclData={this.updateAclData.bind(this)}
-					/>
+					<MuiThemeProvider>
+						<ACLRows
+							aclList={this.state.aclList}
+							removeAcl={this.removeAcl.bind(this)}
+							addAcl={this.addAcl.bind(this)}
+							updateAclData={this.updateAclData.bind(this)}
+						/>
+					</MuiThemeProvider>
 				</Modal.Body>
 				<Modal.Footer>
 					<Button onClick={this.close}>Cancel</Button>
