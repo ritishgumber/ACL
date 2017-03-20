@@ -1,6 +1,6 @@
 {
   "name": "cloudboost-acl",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "./dist/acl.js",
   "scripts": {
@@ -29,8 +29,6 @@
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1",
     "react-bootstrap": "^0.30.7",
     "material-ui": "^0.16.4",
     "css-loader": "^0.26.1",
