@@ -1,6 +1,6 @@
 {
   "name": "cloudboost-acl",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/acl.js",
   "scripts": {
@@ -25,12 +25,19 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.16.0",
     "babel-preset-stage-1": "^6.16.0",
-    "webpack": "^2.2.1"
-  },
-  "dependencies": {
+    "webpack": "^2.2.1",
     "babel-cli": "^6.18.0",
-    "react-bootstrap": "^0.30.7",
     "css-loader": "^0.26.1",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "material-ui": "^0.16.0",
+    "react-bootstrap": "^0.30.7"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "material-ui": "^0.16.0",
+    "react-bootstrap": "^0.30.7"
   }
 }
