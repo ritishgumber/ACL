@@ -17,40 +17,41 @@ class ACL extends React.Component {
 		this.generaliseACL(this.props.objectWithACL)
 	}
 	generaliseACL(props) {
+		let ACL = props.ACL.document ? props.ACL.document : props.ACL
 		let users = {}
 		let roles = {}
-		for (var k in props.ACL.document.read.allow.user) {
-			if (!users[props.ACL.document.read.allow.user[k]]) users[props.ACL.document.read.allow.user[k]] = {}
-			users[props.ACL.document.read.allow.user[k]].read = true
+		for (var k in ACL.read.allow.user) {
+			if (!users[ACL.read.allow.user[k]]) users[ACL.read.allow.user[k]] = {}
+			users[ACL.read.allow.user[k]].read = true
 		}
-		for (var k in props.ACL.document.read.deny.user) {
-			if (!users[props.ACL.document.read.deny.user[k]]) users[props.ACL.document.read.deny.user[k]] = {}
-			users[props.ACL.document.read.deny.user[k]].read = false
+		for (var k in ACL.read.deny.user) {
+			if (!users[ACL.read.deny.user[k]]) users[ACL.read.deny.user[k]] = {}
+			users[ACL.read.deny.user[k]].read = false
 		}
-		for (var k in props.ACL.document.write.allow.user) {
-			if (!users[props.ACL.document.write.allow.user[k]]) users[props.ACL.document.write.allow.user[k]] = {}
-			users[props.ACL.document.write.allow.user[k]].write = true
+		for (var k in ACL.write.allow.user) {
+			if (!users[ACL.write.allow.user[k]]) users[ACL.write.allow.user[k]] = {}
+			users[ACL.write.allow.user[k]].write = true
 		}
-		for (var k in props.ACL.document.write.deny.user) {
-			if (!users[props.ACL.document.write.deny.user[k]]) users[props.ACL.document.write.deny.user[k]] = {}
-			users[props.ACL.document.write.deny.user[k]].write = false
+		for (var k in ACL.write.deny.user) {
+			if (!users[ACL.write.deny.user[k]]) users[ACL.write.deny.user[k]] = {}
+			users[ACL.write.deny.user[k]].write = false
 		}
 
-		for (var k in props.ACL.document.read.allow.role) {
-			if (!roles[props.ACL.document.read.allow.role[k]]) roles[props.ACL.document.read.allow.role[k]] = {}
-			roles[props.ACL.document.read.allow.role[k]].read = true
+		for (var k in ACL.read.allow.role) {
+			if (!roles[ACL.read.allow.role[k]]) roles[ACL.read.allow.role[k]] = {}
+			roles[ACL.read.allow.role[k]].read = true
 		}
-		for (var k in props.ACL.document.read.deny.role) {
-			if (!roles[props.ACL.document.read.deny.role[k]]) roles[props.ACL.document.read.deny.role[k]] = {}
-			roles[props.ACL.document.read.deny.role[k]].read = false
+		for (var k in ACL.read.deny.role) {
+			if (!roles[ACL.read.deny.role[k]]) roles[ACL.read.deny.role[k]] = {}
+			roles[ACL.read.deny.role[k]].read = false
 		}
-		for (var k in props.ACL.document.write.allow.role) {
-			if (!roles[props.ACL.document.write.allow.role[k]]) roles[props.ACL.document.write.allow.role[k]] = {}
-			roles[props.ACL.document.write.allow.role[k]].write = true
+		for (var k in ACL.write.allow.role) {
+			if (!roles[ACL.write.allow.role[k]]) roles[ACL.write.allow.role[k]] = {}
+			roles[ACL.write.allow.role[k]].write = true
 		}
-		for (var k in props.ACL.document.write.deny.role) {
-			if (!roles[props.ACL.document.write.deny.role[k]]) roles[props.ACL.document.write.deny.role[k]] = {}
-			roles[props.ACL.document.write.deny.role[k]].write = false
+		for (var k in ACL.write.deny.role) {
+			if (!roles[ACL.write.deny.role[k]]) roles[ACL.write.deny.role[k]] = {}
+			roles[ACL.write.deny.role[k]].write = false
 		}
 
 		let usersList = []
