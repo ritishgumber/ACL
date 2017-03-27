@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 
 This is the React Component to modify/update the ACL (Access Control List) of a CloudObject or any object having CloudBoost ACL property.
 
@@ -63,7 +63,7 @@ class YourComponent extends React.Component {
 
 ```
 
-#LICENSE
+# LICENSE
 
 Copyright 2016 HackerBay, Inc.
 
